@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(6, 48, 48);
+        animation-name: box-animation;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+        position: relative;
+        
+      }
+
+      @keyframes box-animation{
+         0%{
+          background-color: red;
+          border-radius: 0px;
+          left: 0px;
+          top: 0px;
+         }
+         25%{
+          background-color: yellow;
+          border-radius: 50% 0 0 0 ;
+          left:200px;
+          top: 0px;
+          
+         }
+         50%{
+          background-color: green;
+          border-radius:0 0 50% 0 ;
+          left:200px;
+          top: 200px;
+          height: 500px;
+          width: 500px;
+         }
+
+         75%{
+          background-color: indigo;
+          border-radius:0 0 0 50%;
+          left:0px;
+          top: 200px;
+         }
+
+         100%{
+          background-color: tomato;
+          border-radius: 10% 20% 30% 40%;
+          left:0px;
+          top: 0px;
+         }
+         
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
